@@ -1,0 +1,43 @@
+:root {
+  --dark-gray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-gray: hsl(0, 0%, 27%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.main {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, max-content);
+  grid-template-areas: 
+  "main"
+  "buy"
+  "image1"
+  "about"
+  "image2";
+}
+
+.main__hero {
+  min-height: 500px;
+  background-image: url("../images/desktop-image-hero-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
